@@ -1,13 +1,158 @@
-<!DOCTYPE html>     
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD131</title>
-    </head>
-    <body>
-        <h1>WDD131 - Bright</h1>
-    </body>    
-    </html>   
-            
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>WDD 131 – Dynamic Web Fundamentals – Bright Abbey</title>
+
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals by Bright Abbey. Learn about my background, Ghana, web development, HTML, CSS, and JavaScript.">
+
+    <meta name="author" content="Bright Abbey">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener noreferrer">Scripture</a>
+
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Bright Abbey</h1>
+
+        <div class="card-container">
+
+            <section class="card about-card">
+
+                <h2>About Me</h2>
+
+                <div class="about-content">
+
+                    <img src="images/profilepic.jpeg"
+                         alt="Portrait of Bright Abbey"
+                         class="profile-image">
+
+                    <p>
+                        My name is Bright Abbey. I am from Ghana, a beautiful
+                        country in West Africa. I have a passion for technology
+                        and enjoy learning new skills. I am currently studying
+                        web development and building my knowledge of HTML,
+                        CSS, and JavaScript. My goal is to become a skilled
+                        software developer and use technology to create
+                        useful solutions.
+                    </p>
+
+                </div>
+
+                <h3>Accra, Ghana</h3>
+
+                <div class="country-content">
+
+                    <img src="images/ghana-flag.png"
+                         alt="The national flag of Ghana"
+                         class="ghana-image">
+
+                    <p>
+                        Ghana is a country located in West Africa.
+                        Its capital city is Accra. Ghana is known for
+                        its rich culture, history, hospitality, and
+                        beautiful tourist attractions. The country is
+                        also famous for its gold, cocoa, and diverse
+                        traditions.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <section class="card resources-card">
+
+                <h2>Web Dev Resources</h2>
+
+                <div class="resources-content">
+
+                    <p>
+                        These resources will help me improve my
+                        knowledge and skills in web development.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <a href="https://dev.to/"
+                               target="_blank"
+                               rel="noopener noreferrer">Dev.to Community</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.smashingmagazine.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">Smashing Magazine</a>
+                        </li>
+
+                        <li>
+                            <a href="https://css-tricks.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">CSS Tricks</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.w3schools.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">W3Schools</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.udemy.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">Udemy</a>
+                        </li>
+
+                        <li>
+                            <a href="https://picsum.photos/"
+                               target="_blank"
+                               rel="noopener noreferrer">Lorem Picsum</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; <span id="currentyear"></span> | Bright Abbey | Ghana
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>

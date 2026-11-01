@@ -1,0 +1,236 @@
+/* Google Fonts */
+:root {
+    --primary-color: #1d4e89;
+    --secondary-color: #16324f;
+    --accent-color: #f4b942;
+    --background-color: #f4f7fb;
+    --text-color: #333333;
+    --white-color: #ffffff;
+
+    --heading-font: "Poppins", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    padding: 1.3rem;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+
+/* Main */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+
+/* Card Grid */
+.card-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+
+/* Cards */
+.card {
+    background-color: var(--white-color);
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 0.8rem;
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 1.5rem auto 1rem;
+    width: 80%;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 0.5rem;
+    font-family: var(--heading-font);
+}
+
+
+/* About Me Card */
+.about-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.5rem;
+}
+
+.about-content p {
+    flex: 1;
+}
+
+.profile-image {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+}
+
+
+/* Country Section */
+.country-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.ghana-image {
+    width: 130px;
+    height: 90px;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+}
+
+
+/* Resources Card */
+.resources-content {
+    padding: 2rem 1.5rem;
+}
+
+.resources-content ul {
+    padding-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.resources-content li {
+    margin-bottom: 0.6rem;
+}
+
+.resources-content a {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.resources-content a:hover {
+    color: #c17c00;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.4rem;
+}
+
+#lastModified {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .country-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 160px;
+        height: 200px;
+    }
+
+}
