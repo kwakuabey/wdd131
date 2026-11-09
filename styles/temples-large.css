@@ -1,0 +1,57 @@
+@media (min-width: 42rem) {
+
+    .site-header {
+        min-height: 5rem;
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .brand {
+        font-size: 1.5rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .primary-nav,
+    .primary-nav.open {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .primary-nav a {
+        padding: 0.65rem 0.85rem;
+    }
+
+    .intro {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .album {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media (min-width: 62rem) {
+
+    .album {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.75rem;
+    }
+
+    .intro {
+        padding-top: 4rem;
+    }
+}
