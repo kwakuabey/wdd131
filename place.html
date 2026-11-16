@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Ghana, its geography, population, culture, and weather.">
+    <meta name="author" content="Bright Abbey">
+
+    <title>Ghana | Country Information</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ghana</h1>
+    </header>
+
+    <main>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/ghana_pics/ghana-large.webp" media="(min-width: 700px)">
+
+                <img src="images/ghana_pics/ghana-small.webp" alt="Beautiful landscape of Ghana" width="600"
+                    height="400">
+            </picture>
+        </div>
+
+        <section class="data">
+            <h2>Data</h2>
+
+            <div class="info">
+                <p><strong>Area:</strong> 238,535 sq km</p>
+                <p><strong>Population:</strong> Approximately 34 million</p>
+                <p><strong>Capital:</strong> Accra</p>
+                <p><strong>Languages:</strong> English</p>
+                <p><strong>Currency:</strong> Ghana Cedi (GHS)</p>
+                <p><strong>Time Zone:</strong> UTC+0</p>
+                <p><strong>Calling Code:</strong> +233</p>
+                <p><strong>Internet TLD:</strong> .gh</p>
+            </div>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <img class="weather-icon" src="images/ghana_pics/weather.svg" alt="Partly cloudy weather icon" width="80"
+                height="80">
+
+            <div class="info">
+                <p>
+                    <strong>Temperature:</strong>
+                    <span id="temperature">30</span> °C
+                </p>
+
+                <p>
+                    <strong>Conditions:</strong>
+                    Partly Cloudy
+                </p>
+
+                <p>
+                    <strong>Wind:</strong>
+                    <span id="wind-speed">10</span> km/h
+                </p>
+
+                <p>
+                    <strong>Wind Chill:</strong>
+                    <span id="wind-chill">N/A</span>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span>
+            | Bright Abbey | Ghana
+        </p>
+
+        <p>
+            Last Modified:
+            <span id="last-modified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
